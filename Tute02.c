@@ -20,30 +20,30 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 int main() {
 
-  float distance;
+  float distance;  //declare  variables
   float amount;
 
   printf("Enter distance :");
-  scanf("%f",&distance);
+  scanf("%f",&distance);    //read distance from keyboard
 
-  if(distance <= 30 && distance > 0)
+  if(distance <= 30 && distance > 0)  //check if the distance less than 30
   {
-    amount = 50 * distance;
+    amount = 50 * distance;   //calculate amount
   }
-  else if(distance > 30)
+  else if(distance > 30)    //check if the distance greater than 30
   {
-    amount = 50 * 30 + 40 * (distance-30);
+    amount = 50 * 30 + 40 * (distance-30);  //calculate amount
 
   }
   else
   {
-    printf("Invalid input");
+    printf("Invalid input");   //error massage
     return -1;
     
   }
 
-  printf("Amount is : %.2f",amount);
+  printf("Amount is : %.2f",amount);  //display amount
 
   
-  return 0;
+  return 0;  //end of main function
 }
